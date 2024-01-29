@@ -40,8 +40,8 @@ This repository contains a Java-based Test Automation Framework (TAF) template, 
 ### Structure
 
 - **Feature Files**: `src/test/resources/features`
-- **Step Definitions**: `src/test/java/steps`
-- **Page Objects**: `src/test/java/pages`
+- **Step Definitions**: `src/main/java/org/example/steps`
+- **Page Objects**: `src/main/java/org/example/fe`
 
 ### Creating a New Test
 
