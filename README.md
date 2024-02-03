@@ -52,7 +52,11 @@ This repository contains a Java-based Test Automation Framework (TAF) template, 
 ## Running Tests
 
 - Run `mvn test` to execute all tests.
+- Run `mvn test site` to get Allure report.
 - Results and logs are in the `target` directory.
+- Use your own test properties
+
+![img.png](user_properties_file.png)
 
 ## Reporting
 
