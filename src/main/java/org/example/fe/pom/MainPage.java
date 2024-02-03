@@ -1,6 +1,5 @@
 package org.example.fe.pom;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import lombok.Getter;
 import org.example.core.annotations.DefaultUrl;

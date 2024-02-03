@@ -1,7 +1,6 @@
 package org.example.steps;
 
 import io.cucumber.java.en.Then;
-import org.assertj.core.api.Assertions;
 import org.example.core.annotations.Flow;
 import org.example.fe.flow.LogInPageFlow;
 import org.example.steps.technical.CucumberSteps;

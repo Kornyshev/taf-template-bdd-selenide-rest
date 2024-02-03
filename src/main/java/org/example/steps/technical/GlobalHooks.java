@@ -5,9 +5,7 @@ import io.cucumber.java.*;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.SoftAssertions;
 import org.example.core.TestContext;
-import org.example.core.properties.Properties;
 import org.example.core.properties.PropertiesLoader;
-import org.example.fe.models.User;
 
 @Slf4j
 public class GlobalHooks extends CucumberSteps {
