@@ -44,9 +44,9 @@ public class PropertiesLoader {
         System.getProperties().forEach((key, value) -> log.info("Key: {}, Value: {}", key, value));
         log.info("\n");
         properties.stringPropertyNames().forEach(propertyName -> {
-            boolean propertyIsInSystemVariables = !System.getProperties().containsKey(propertyName);
+            boolean propertyIsInSystemVariables = System.getProperties().containsKey(propertyName);
             log.info("Property {} is in System Variables: {}", propertyName, propertyIsInSystemVariables);
-            if (propertyIsInSystemVariables) {
+            if (!propertyIsInSystemVariables) {
                 System.setProperty(propertyName, properties.getProperty(propertyName));
             }
         });
