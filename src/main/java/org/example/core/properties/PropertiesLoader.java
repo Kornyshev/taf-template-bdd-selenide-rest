@@ -40,8 +40,13 @@ public class PropertiesLoader {
     }
 
     private void saveToSystemProperties(Properties properties) {
+        log.info("\nSystem Properties\n");
+        System.getProperties().forEach((key, value) -> log.info("Key: {}, Value: {}", key, value));
+        log.info("\n");
         properties.stringPropertyNames().forEach(propertyName -> {
-            if (!System.getProperties().containsKey(propertyName)) {
+            boolean propertyIsInSystemVariables = !System.getProperties().containsKey(propertyName);
+            log.info("Property {} is in System Variables: {}", propertyName, propertyIsInSystemVariables);
+            if (propertyIsInSystemVariables) {
                 System.setProperty(propertyName, properties.getProperty(propertyName));
             }
         });
